@@ -1,17 +1,7 @@
 
-┌─────────────┐     ┌──────────────┐     ┌─────────────┐
-│   Course    │────▶│   Kafka      │────▶│   Course    │
-│  Producer   │     │   Broker     │     │  Consumer   │
-│  (Service)  │     │  (Docker)    │     │  (Service)  │
-└─────────────┘     └──────────────┘     └─────────────┘
-                          │
-                    ┌─────┴─────┐
-                    │  Topic:   │
-                    │ "aditya"  │
-                    └───────────┘
-
-
-![Uploading image.png…]()
+Producer Service  --->  Kafka Broker  --->  Consumer Service
+        |                    |                    |
+   KafkaTemplate         Topic: aditya        @KafkaListener
 
 
 
