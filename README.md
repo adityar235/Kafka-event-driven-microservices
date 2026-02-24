@@ -1,7 +1,7 @@
 
 Producer Service  --->  Kafka Broker  --->  Consumer Service
         |                    |                    |
-   KafkaTemplate         Topic: aditya        @KafkaListener
+                       Topic: aditya      
 
 
 
